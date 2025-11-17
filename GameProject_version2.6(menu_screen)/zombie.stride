@@ -85,6 +85,7 @@
                         <call expression="world.removeObject(civilian1)" expression-java="world.removeObject(civilian1)" enable="true"/>
                         <variable type="Zombie2" type-java="Zombie2" name="zombie2" value="new Zombie2()" value-java=" new Zombie2()" enable="true"/>
                         <call expression="getWorld().addObject(zombie2,getX(),getY())" expression-java="getWorld().addObject(zombie2, getX(), getY())" enable="true"/>
+                        <call expression="Greenfoot.playSound(&quot;ZombieSpawn(pitched).wav&quot;)" expression-java="Greenfoot.playSound(&quot;ZombieSpawn(pitched).wav&quot;)" enable="true"/>
                         <assign dest="killCount" dest-java="killCount" src="killCount+1" src-java="killCount + 1" enable="true"/>
                     </ifStatements>
                 </if>
@@ -111,6 +112,7 @@
                 <if condition="killPowerUp!=null" condition-java="killPowerUp != null" enable="true">
                     <ifStatements>
                         <variable type="World" type-java="World" name="world" value="getWorld()" value-java="getWorld()" enable="true"/>
+                        <call expression="Greenfoot.playSound(&quot;EatKillPowerUp(mixed&amp;pitched).wav&quot;)" expression-java="Greenfoot.playSound(&quot;EatKillPowerUp(mixed&amp;pitched).wav&quot;)" enable="true"/>
                         <call expression="world.removeObject(killPowerUp)" expression-java="world.removeObject(killPowerUp)" enable="true"/>
                     </ifStatements>
                 </if>

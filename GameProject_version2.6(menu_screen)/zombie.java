@@ -10,8 +10,8 @@ public class zombie extends Actor
 {
     /* WARNING: This file is auto-generated and any changes to it will be overwritten*/
     private int ySpeed = 4;
-    private GreenfootImage leftImage =  new GreenfootImage("Zombie_leftImage_scaled29percent.png");
-    private GreenfootImage rightImage =  new GreenfootImage("Zombie_rightImage_scaled29percent.png");
+    private GreenfootImage leftImage =  new  GreenfootImage("Zombie_leftImage_scaled29percent.png");
+    private GreenfootImage rightImage =  new  GreenfootImage("Zombie_rightImage_scaled29percent.png");
     private int killCount = 0;
 
     /**
@@ -67,8 +67,9 @@ public class zombie extends Actor
         if (civilian1 != null) {
             World world = getWorld();
             world.removeObject(civilian1);
-            Zombie2 zombie2 =  new Zombie2();
+            Zombie2 zombie2 =  new  Zombie2();
             getWorld().addObject(zombie2, getX(), getY());
+            Greenfoot.playSound("ZombieSpawn(pitched).wav");
             killCount = killCount + 1;
         }
     }
@@ -81,6 +82,7 @@ public class zombie extends Actor
         Actor killPowerUp = getOneIntersectingObject(KillPowerUp.class);
         if (killPowerUp != null) {
             World world = getWorld();
+            Greenfoot.playSound("EatKillPowerUp(mixed&pitched).wav");
             world.removeObject(killPowerUp);
         }
     }
@@ -104,7 +106,7 @@ public class zombie extends Actor
      */
     public void transitionToGameWorld()
     {
-        World gameWinWorld =  new GameWinWorld();
+        World gameWinWorld =  new  GameWinWorld();
         Greenfoot.setWorld(gameWinWorld);
     }
 
@@ -117,7 +119,7 @@ public class zombie extends Actor
         int y = Greenfoot.getRandomNumber(880);
         int popCivilian = Greenfoot.getRandomNumber(200);
         if (popCivilian == 1) {
-            Civilian1 civilian1 =  new Civilian1();
+            Civilian1 civilian1 =  new  Civilian1();
             getWorld().addObject(civilian1, x, y);
         }
     }
@@ -131,7 +133,7 @@ public class zombie extends Actor
         int y = Greenfoot.getRandomNumber(880);
         int popKillPowerUp = Greenfoot.getRandomNumber(300);
         if (popKillPowerUp == 1) {
-            KillPowerUp KillPowerUp =  new KillPowerUp();
+            KillPowerUp KillPowerUp =  new  KillPowerUp();
             getWorld().addObject(KillPowerUp, x, y);
         }
     }

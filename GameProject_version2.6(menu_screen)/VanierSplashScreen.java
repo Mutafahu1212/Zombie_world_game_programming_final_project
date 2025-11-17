@@ -27,12 +27,13 @@ public class VanierSplashScreen extends World
      if (Greenfoot.isKeyDown("enter"))
         {
             Greenfoot.setWorld(new MenuScreen()); 
-
+            Greenfoot.playSound("ClickSplashScreens(high_volume).wav");
         }
 
         if (System.currentTimeMillis() >= (timeVanierScreenCreation + (4 * 1000)))
         {
             Greenfoot.setWorld(new MenuScreen()); 
+            Greenfoot.playSound("ClickSplashScreens(high_volume).wav");
         }
     }
 }

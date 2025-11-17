@@ -29,6 +29,7 @@ public class Level1 extends Actor
             
             Display display = new Display();
             getWorld().addObject(display , 320, 500);
+            Greenfoot.playSound("ClickSplashScreens(high_volume).wav");
             Greenfoot.setWorld(new MyWorld()); 
             
         }
