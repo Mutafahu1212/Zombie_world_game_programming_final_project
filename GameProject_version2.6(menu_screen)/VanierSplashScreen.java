@@ -26,13 +26,13 @@ public class VanierSplashScreen extends World
      int timerValue = (int) (System.currentTimeMillis() - timeVanierScreenCreation)/1000;
      if (Greenfoot.isKeyDown("enter"))
         {
-            Greenfoot.setWorld(new MyWorld()); 
+            Greenfoot.setWorld(new MenuScreen()); 
 
         }
 
         if (System.currentTimeMillis() >= (timeVanierScreenCreation + (4 * 1000)))
         {
-            Greenfoot.setWorld(new MyWorld()); 
+            Greenfoot.setWorld(new MenuScreen()); 
         }
     }
 }
