@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="PoliceStation" extends="Actor" extends-java="Actor" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors/>
+    <methods>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve">Act - do whatever the PoliceStation wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="createPolice()" expression-java="createPolice()" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="createPolice" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="Greenfoot.getRandomNumber(275)==1" condition-java="Greenfoot.getRandomNumber(275) == 1" enable="true">
+                    <ifStatements>
+                        <variable type="Cop" type-java="Cop" name="cop" value="new Cop()" value-java=" new Cop()" enable="true"/>
+                        <call expression="getWorld().addObject(cop,getX(),getY())" expression-java="getWorld().addObject(cop, getX(), getY())" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+    </methods>
+</class>

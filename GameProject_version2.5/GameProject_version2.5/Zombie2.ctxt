@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Zombie2
+comment0.text=\r\n\ \r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Zombie2\ wants\ to\ do.\ This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=
+comment2.target=void\ RandomAction()
+comment2.text=\r\n\ \r\n
+comment3.params=
+comment3.target=void\ movingAround()
+comment3.text=\r\n\ \r\n
+comment4.params=
+comment4.target=void\ killCop()
+comment4.text=\r\n\ \r\n
+numComments=5

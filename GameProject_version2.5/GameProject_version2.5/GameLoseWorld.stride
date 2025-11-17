@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="GameLoseWorld" extends="World" extends-java="World" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class GameLoseWorld.</javadoc>
+            <params/>
+            <throws/>
+            <delegate target="super" params="624,624,1" params-java="624, 624, 1"/>
+            <body/>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="public" type="void" type-java="void" name="showTextWithBigBlackFont" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params>
+                <params type="String" type-java="String" name="message"/>
+                <params type="int" type-java="int" name="x"/>
+                <params type="int" type-java="int" name="y"/>
+            </params>
+            <throws/>
+            <body>
+                <variable type="GreenfootImage" type-java="GreenfootImage" name="bg" value="getBackground()" value-java="getBackground()" enable="true"/>
+                <variable type="Font" type-java="Font" name="font" value="new Font(250)" value-java=" new Font(250)" enable="true"/>
+                <call expression="bg.setFont(font)" expression-java="bg.setFont(font)" enable="true"/>
+                <call expression="bg.setColor(Color.WHITE)" expression-java="bg.setColor(Color.WHITE)" enable="true"/>
+                <call expression="bg.drawString(message,x,y)" expression-java="bg.drawString(message, x, y)" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>
