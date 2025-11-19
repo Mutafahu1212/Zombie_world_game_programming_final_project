@@ -125,7 +125,7 @@ public class Cop extends Actor
     public boolean isGameLost()
     {
         World world = getWorld();
-        if (world.getObjects(zombie.class).isEmpty()) {
+        if (world.getObjects(ZombieWithKillPower.class).isEmpty() && world.getObjects(zombie.class).isEmpty()) {
             return true;
         }
         else {

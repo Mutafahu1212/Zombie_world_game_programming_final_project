@@ -10,8 +10,8 @@ public class Zombie2 extends Actor
 {
     private int action = 0;
     private int ySpeed = 4;
-    private GreenfootImage rightImage =  new GreenfootImage("ZOMBIE2_rightImage.png");
-    private GreenfootImage leftImage =  new GreenfootImage("ZOMBIE2_leftImage.png");
+    private GreenfootImage rightImage =  new  GreenfootImage("ZOMBIE2_rightImage.png");
+    private GreenfootImage leftImage =  new  GreenfootImage("ZOMBIE2_leftImage.png");
 
     /**
      * Act - do whatever the Zombie2 wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.

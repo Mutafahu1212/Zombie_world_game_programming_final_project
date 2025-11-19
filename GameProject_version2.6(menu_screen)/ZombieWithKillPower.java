@@ -6,16 +6,17 @@ import greenfoot.*;
 /**
  * 
  */
-public class zombie extends Actor
+public class ZombieWithKillPower extends Actor
 {
     /* WARNING: This file is auto-generated and any changes to it will be overwritten*/
     private int ySpeed = 4;
-    private GreenfootImage leftImage =  new  GreenfootImage("Zombie_leftImage_scaled29percent.png");
-    private GreenfootImage rightImage =  new  GreenfootImage("Zombie_rightImage_scaled29percent.png");
+    private GreenfootImage leftImage =  new  GreenfootImage("Zombie_leftImage_kill_power.png");
+    private GreenfootImage rightImage =  new  GreenfootImage("Zombie_rightImage_kill_power.png");
     private int killCount = 0;
+    private int timer = 0;
 
     /**
-     * Act - do whatever the zombie wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
+     * Act - do whatever the ZombieWithKillPower wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
@@ -35,6 +36,9 @@ public class zombie extends Actor
         addCiviliansInRandomSpots();
         eatKillPowerUp();
         spawnKillPowerUp();
+        killCops();
+        endKillPower();
+        timer = timer + 1;
     }
 
     /**
@@ -84,9 +88,6 @@ public class zombie extends Actor
             World world = getWorld();
             Greenfoot.playSound("EatKillPowerUp(mixed&pitched).wav");
             world.removeObject(killPowerUp);
-            ZombieWithKillPower zombieWithKillPower =  new  ZombieWithKillPower();
-            getWorld().addObject(zombieWithKillPower, getX(), getY());
-            world.removeObject(this);
         }
     }
 
@@ -133,11 +134,37 @@ public class zombie extends Actor
     public void spawnKillPowerUp()
     {
         int x = Greenfoot.getRandomNumber(1450);
-        int y = Greenfoot.getRandomNumber(820);
+        int y = Greenfoot.getRandomNumber(880);
         int popKillPowerUp = Greenfoot.getRandomNumber(300);
         if (popKillPowerUp == 1) {
             KillPowerUp KillPowerUp =  new  KillPowerUp();
             getWorld().addObject(KillPowerUp, x, y);
+        }
+    }
+
+    /**
+     * 
+     */
+    public void killCops()
+    {
+        Actor cop = getOneIntersectingObject(Cop.class);
+        if (cop != null) {
+            World world = getWorld();
+            world.removeObject(cop);
+        }
+    }
+
+    /**
+     * 
+     */
+    public void endKillPower()
+    {
+        if (timer > 600) {
+            timer = 0;
+            World world = getWorld();
+            zombie z =  new  zombie();
+            getWorld().addObject(z, getX(), getY());
+            world.removeObject(this);
         }
     }
 }

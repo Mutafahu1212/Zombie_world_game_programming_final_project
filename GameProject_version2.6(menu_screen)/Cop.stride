@@ -162,7 +162,7 @@
             <throws/>
             <body>
                 <variable type="World" type-java="World" name="world" value="getWorld()" value-java="getWorld()" enable="true"/>
-                <if condition="world.getObjects(zombie.class).isEmpty()" condition-java="world.getObjects(zombie.class).isEmpty()" enable="true">
+                <if condition="world.getObjects(ZombieWithKillPower.class).isEmpty()&amp;&amp;world.getObjects(zombie.class).isEmpty()" condition-java="world.getObjects(ZombieWithKillPower.class).isEmpty() &amp;&amp; world.getObjects(zombie.class).isEmpty()" enable="true">
                     <ifStatements>
                         <return value="true" value-java="true" enable="true"/>
                     </ifStatements>
