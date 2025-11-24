@@ -30,25 +30,25 @@ public class MyWorld extends World
      */
     private void prepare()
     {
-        Barrier barrier =  new Barrier();
+        Barrier barrier =  new  Barrier();
         addObject(barrier, 596, 747);
         barrier.setLocation(724, 873);
-        zombie zombie =  new zombie();
+        zombie zombie =  new  zombie();
         addObject(zombie, 345, 602);
-        PoliceStation policeStation =  new PoliceStation();
+        PoliceStation policeStation =  new  PoliceStation();
         addObject(policeStation, 1349, 573);
-        Civilian1 civilian1 =  new Civilian1();
+        Civilian1 civilian1 =  new  Civilian1();
         addObject(civilian1, 807, 185);
-        Civilian1 civilian12 =  new Civilian1();
+        Civilian1 civilian12 =  new  Civilian1();
         addObject(civilian12, 1021, 178);
-        Civilian1 civilian13 =  new Civilian1();
+        Civilian1 civilian13 =  new  Civilian1();
         addObject(civilian13, 1288, 170);
         policeStation.setLocation(1389, 751);
         removeObject(policeStation);
         removeObject(civilian13);
         removeObject(civilian12);
         removeObject(civilian1);
-        PoliceStation policeStation2 =  new PoliceStation();
+        PoliceStation policeStation2 =  new  PoliceStation();
         addObject(policeStation2, 732, 344);
     }
 }

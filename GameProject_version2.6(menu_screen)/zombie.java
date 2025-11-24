@@ -1,4 +1,3 @@
-// WARNING: This file is auto-generated and any changes to it will be overwritten
 import lang.stride.*;
 import java.util.*;
 import greenfoot.*;
@@ -12,7 +11,7 @@ public class zombie extends Actor
     private int ySpeed = 4;
     private GreenfootImage leftImage =  new  GreenfootImage("Zombie_leftImage_scaled29percent.png");
     private GreenfootImage rightImage =  new  GreenfootImage("Zombie_rightImage_scaled29percent.png");
-    private int killCount = 0;
+
 
     /**
      * Act - do whatever the zombie wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
@@ -31,7 +30,7 @@ public class zombie extends Actor
         if (isGameWon()) {
             transitionToGameWorld();
         }
-        getWorld().showText(" " + killCount + "/10", 500, 860);
+        getWorld().showText(" " + PoliceStation.killcount + "/10", 500, 860);
         addCiviliansInRandomSpots();
         eatKillPowerUp();
         spawnKillPowerUp();
@@ -70,7 +69,7 @@ public class zombie extends Actor
             Zombie2 zombie2 =  new  Zombie2();
             getWorld().addObject(zombie2, getX(), getY());
             Greenfoot.playSound("ZombieSpawn(pitched).wav");
-            killCount = killCount + 1;
+            PoliceStation.killcount = PoliceStation.killcount + 1;
         }
     }
 
@@ -96,7 +95,7 @@ public class zombie extends Actor
     public boolean isGameWon()
     {
         World world = getWorld();
-        if (killCount == 10) {
+        if (PoliceStation.killcount == 10) {
             return true;
         }
         else {
