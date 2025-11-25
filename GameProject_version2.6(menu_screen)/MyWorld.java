@@ -1,4 +1,3 @@
-// WARNING: This file is auto-generated and any changes to it will be overwritten
 import lang.stride.*;
 import java.util.*;
 import greenfoot.*;
@@ -9,6 +8,8 @@ import greenfoot.*;
 public class MyWorld extends World
 {
     private int livesRemaining;
+    
+    
 
     /**
      * Constructor for objects of class MyWorld.
@@ -22,6 +23,7 @@ public class MyWorld extends World
         getBackground().setColor(Color.BLACK);
         showText("Civilians Eaten: ", 400, 860);
         prepare();
+        Counter.killcount = 0;
     }
 
     /**
@@ -50,5 +52,6 @@ public class MyWorld extends World
         removeObject(civilian1);
         PoliceStation policeStation2 =  new  PoliceStation();
         addObject(policeStation2, 732, 344);
+        
     }
 }

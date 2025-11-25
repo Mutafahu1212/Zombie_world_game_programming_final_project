@@ -30,7 +30,7 @@ public class zombie extends Actor
         if (isGameWon()) {
             transitionToGameWorld();
         }
-        getWorld().showText(" " + PoliceStation.killcount + "/10", 500, 860);
+        getWorld().showText(" " + Counter.killcount + "/10", 500, 860);
         addCiviliansInRandomSpots();
         eatKillPowerUp();
         spawnKillPowerUp();
@@ -69,7 +69,7 @@ public class zombie extends Actor
             Zombie2 zombie2 =  new  Zombie2();
             getWorld().addObject(zombie2, getX(), getY());
             Greenfoot.playSound("ZombieSpawn(pitched).wav");
-            PoliceStation.killcount = PoliceStation.killcount + 1;
+            Counter.killcount = Counter.killcount + 1;
         }
     }
 
@@ -95,7 +95,7 @@ public class zombie extends Actor
     public boolean isGameWon()
     {
         World world = getWorld();
-        if (PoliceStation.killcount == 10) {
+        if (Counter.killcount == 10) {
             return true;
         }
         else {
