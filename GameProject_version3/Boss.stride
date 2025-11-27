@@ -6,14 +6,88 @@
         <import target="greenfoot.*" enable="true"/>
     </imports>
     <implements/>
-    <fields/>
+    <fields>
+        <variable access="private" type="GreenfootImage" type-java="GreenfootImage" name="leftImage" value="new GreenfootImage(&quot;BOSS_leftImage.png&quot;)" value-java=" new GreenfootImage(&quot;BOSS_leftImage.png&quot;)" enable="true"/>
+        <variable access="private" type="GreenfootImage" type-java="GreenfootImage" name="rightImage" value="new GreenfootImage(&quot;BOSS_rightImage.png&quot;)" value-java=" new GreenfootImage(&quot;BOSS_rightImage.png&quot;)" enable="true"/>
+        <variable access="" type="int" type-java="int" name="action" value="0" value-java="0" enable="true"/>
+        <variable access="private" type="int" type-java="int" name="ySpeed" value="0" value-java="0" enable="true"/>
+    </fields>
     <constructors/>
     <methods>
         <method access="public" type="void" type-java="void" name="act" enable="true">
             <javadoc xml:space="preserve">Act - do whatever the Boss wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
             <params/>
             <throws/>
-            <body/>
+            <body>
+                <call expression="movingAround()" expression-java="movingAround()" enable="true"/>
+                <call expression="RandomAction()" expression-java="RandomAction()" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="RandomAction" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="int" type-java="int" name="randomNumber" value="Greenfoot.getRandomNumber(300)" value-java="Greenfoot.getRandomNumber(300)" enable="true"/>
+                <if condition="randomNumber&lt;4" condition-java="randomNumber &lt; 4" enable="true">
+                    <ifStatements>
+                        <assign dest="action" dest-java="action" src="randomNumber" src-java="randomNumber" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="movingAround" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <comment xml:space="preserve">//move  right</comment>
+                <if condition="action==0" condition-java="action == 0" enable="true">
+                    <ifStatements>
+                        <call expression="move(3)" expression-java="move(3)" enable="true"/>
+                        <call expression="setImage(rightImage)" expression-java="setImage(rightImage)" enable="true"/>
+                    </ifStatements>
+                </if>
+                <comment xml:space="preserve">//move  left</comment>
+                <if condition="action==1" condition-java="action == 1" enable="true">
+                    <ifStatements>
+                        <call expression="move(-3)" expression-java="move(-3)" enable="true"/>
+                        <call expression="setImage(leftImage)" expression-java="setImage(leftImage)" enable="true"/>
+                    </ifStatements>
+                </if>
+                <comment xml:space="preserve">//move  upward</comment>
+                <comment xml:space="preserve">//move downward</comment>
+                <if condition="isAtEdge()&amp;&amp;getX()&lt;200" condition-java="isAtEdge() &amp;&amp; getX() &lt; 200" enable="true">
+                    <ifStatements>
+                        <assign dest="action" dest-java="action" src="0" src-java="0" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="isAtEdge()&amp;&amp;getX()&gt;600" condition-java="isAtEdge() &amp;&amp; getX() &gt; 600" enable="true">
+                    <ifStatements>
+                        <assign dest="action" dest-java="action" src="1" src-java="1" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="isAtEdge()&amp;&amp;getY()==500&amp;&amp;getX()&gt;200" condition-java="isAtEdge() &amp;&amp; getY() == 500 &amp;&amp; getX() &gt; 200" enable="true">
+                    <ifStatements>
+                        <assign dest="action" dest-java="action" src="1" src-java="1" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="isAtEdge()&amp;&amp;getY()==500&amp;&amp;getX()&lt;200" condition-java="isAtEdge() &amp;&amp; getY() == 500 &amp;&amp; getX() &lt; 200" enable="true">
+                    <ifStatements>
+                        <assign dest="action" dest-java="action" src="0" src-java="0" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="isAtEdge()&amp;&amp;getX()==500&amp;&amp;getY()&gt;200" condition-java="isAtEdge() &amp;&amp; getX() == 500 &amp;&amp; getY() &gt; 200" enable="true">
+                    <ifStatements>
+                        <assign dest="action" dest-java="action" src="2" src-java="2" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="isAtEdge()&amp;&amp;getX()==500&amp;&amp;getY()&lt;500" condition-java="isAtEdge() &amp;&amp; getX() == 500 &amp;&amp; getY() &lt; 500" enable="true">
+                    <ifStatements>
+                        <assign dest="action" dest-java="action" src="3" src-java="3" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
         </method>
     </methods>
 </class>

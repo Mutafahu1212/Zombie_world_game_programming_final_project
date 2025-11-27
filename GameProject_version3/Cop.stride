@@ -11,7 +11,6 @@
         <variable access="private" type="int" type-java="int" name="ySpeed" value="0" value-java="0" enable="true"/>
         <variable access="private" type="GreenfootImage" type-java="GreenfootImage" name="leftImage" value="new GreenfootImage(&quot;COP_leftImage.png&quot;)" value-java=" new GreenfootImage(&quot;COP_leftImage.png&quot;)" enable="true"/>
         <variable access="private" type="GreenfootImage" type-java="GreenfootImage" name="rightImage" value="new GreenfootImage(&quot;COP_rightImage.png&quot;)" value-java=" new GreenfootImage(&quot;COP_rightImage.png&quot;)" enable="true"/>
-        <variable access="private" type="int" type-java="int" name="zombieLivesRemaining" value="5" value-java="5" enable="true"/>
     </fields>
     <constructors/>
     <methods>
@@ -131,13 +130,8 @@
                 <variable type="Actor" type-java="Actor" name="zombie" value="getOneIntersectingObject(zombie.class)" value-java="getOneIntersectingObject(zombie.class)" enable="true"/>
                 <if condition="zombie!=null" condition-java="zombie != null" enable="true">
                     <ifStatements>
-                        <assign dest="zombieLivesRemaining" dest-java="zombieLivesRemaining" src="zombieLivesRemaining-1" src-java="zombieLivesRemaining - 1" enable="true"/>
-                        <if condition="zombieLivesRemaining==0" condition-java="zombieLivesRemaining == 0" enable="true">
-                            <ifStatements>
-                                <variable type="World" type-java="World" name="world" value="getWorld()" value-java="getWorld()" enable="true"/>
-                                <call expression="world.removeObject(zombie)" expression-java="world.removeObject(zombie)" enable="true"/>
-                            </ifStatements>
-                        </if>
+                        <variable type="World" type-java="World" name="world" value="getWorld()" value-java="getWorld()" enable="true"/>
+                        <call expression="world.removeObject(zombie)" expression-java="world.removeObject(zombie)" enable="true"/>
                     </ifStatements>
                 </if>
             </body>

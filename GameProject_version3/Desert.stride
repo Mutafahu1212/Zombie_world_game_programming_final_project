@@ -12,7 +12,7 @@
             <javadoc xml:space="preserve">Constructor for objects of class Desert.</javadoc>
             <params/>
             <throws/>
-            <delegate target="super" params="1060,800,1" params-java="1060, 800, 1"/>
+            <delegate target="super" params="1090,820,1" params-java="1090, 820, 1"/>
             <body>
                 <call expression="prepare()" expression-java="prepare()" enable="true"/>
             </body>
@@ -26,74 +26,68 @@ That is: create the initial objects and add them to the world.</javadoc>
             <throws/>
             <body>
                 <variable type="Boss" type-java="Boss" name="boss" value="new Boss()" value-java=" new Boss()" enable="true"/>
-                <call expression="addObject(boss,726,473)" expression-java="addObject(boss, 726, 473)" enable="true"/>
-                <variable type="Cop" type-java="Cop" name="cop" value="new Cop()" value-java=" new Cop()" enable="true"/>
-                <call expression="addObject(cop,863,510)" expression-java="addObject(cop, 863, 510)" enable="true"/>
-                <call expression="boss.setLocation(772,392)" expression-java="boss.setLocation(772, 392)" enable="true"/>
-                <call expression="boss.setLocation(764,290)" expression-java="boss.setLocation(764, 290)" enable="true"/>
-                <call expression="boss.setLocation(644,289)" expression-java="boss.setLocation(644, 289)" enable="true"/>
-                <call expression="boss.setLocation(701,320)" expression-java="boss.setLocation(701, 320)" enable="true"/>
-                <variable type="TheMine" type-java="TheMine" name="theMine" value="new TheMine()" value-java=" new TheMine()" enable="true"/>
-                <call expression="addObject(theMine,527,640)" expression-java="addObject(theMine, 527, 640)" enable="true"/>
-                <variable type="TheMine" type-java="TheMine" name="theMine2" value="new TheMine()" value-java=" new TheMine()" enable="true"/>
-                <call expression="addObject(theMine2,348,448)" expression-java="addObject(theMine2, 348, 448)" enable="true"/>
-                <variable type="TheMine" type-java="TheMine" name="theMine3" value="new TheMine()" value-java=" new TheMine()" enable="true"/>
-                <call expression="addObject(theMine3,493,271)" expression-java="addObject(theMine3, 493, 271)" enable="true"/>
-                <variable type="TheMine" type-java="TheMine" name="theMine4" value="new TheMine()" value-java=" new TheMine()" enable="true"/>
-                <call expression="addObject(theMine4,883,325)" expression-java="addObject(theMine4, 883, 325)" enable="true"/>
-                <variable type="TheMine" type-java="TheMine" name="theMine5" value="new TheMine()" value-java=" new TheMine()" enable="true"/>
-                <call expression="addObject(theMine5,782,652)" expression-java="addObject(theMine5, 782, 652)" enable="true"/>
-                <variable type="TheMine" type-java="TheMine" name="theMine6" value="new TheMine()" value-java=" new TheMine()" enable="true"/>
-                <call expression="addObject(theMine6,533,488)" expression-java="addObject(theMine6, 533, 488)" enable="true"/>
-                <call expression="theMine2.setLocation(270,336)" expression-java="theMine2.setLocation(270, 336)" enable="true"/>
-                <variable type="TheMine" type-java="TheMine" name="theMine7" value="new TheMine()" value-java=" new TheMine()" enable="true"/>
-                <call expression="addObject(theMine7,309,651)" expression-java="addObject(theMine7, 309, 651)" enable="true"/>
-                <variable type="TheMine" type-java="TheMine" name="theMine8" value="new TheMine()" value-java=" new TheMine()" enable="true"/>
-                <call expression="addObject(theMine8,268,217)" expression-java="addObject(theMine8, 268, 217)" enable="true"/>
-                <call expression="theMine3.setLocation(602,198)" expression-java="theMine3.setLocation(602, 198)" enable="true"/>
-                <call expression="theMine2.setLocation(472,364)" expression-java="theMine2.setLocation(472, 364)" enable="true"/>
-                <call expression="theMine2.setLocation(339,425)" expression-java="theMine2.setLocation(339, 425)" enable="true"/>
-                <variable type="TheMine" type-java="TheMine" name="theMine9" value="new TheMine()" value-java=" new TheMine()" enable="true"/>
-                <call expression="addObject(theMine9,502,319)" expression-java="addObject(theMine9, 502, 319)" enable="true"/>
-                <call expression="theMine2.setLocation(247,467)" expression-java="theMine2.setLocation(247, 467)" enable="true"/>
-                <call expression="cop.setLocation(872,506)" expression-java="cop.setLocation(872, 506)" enable="true"/>
-                <call expression="cop.setLocation(903,560)" expression-java="cop.setLocation(903, 560)" enable="true"/>
-                <call expression="removeObject(cop)" expression-java="removeObject(cop)" enable="true"/>
-                <call expression="boss.setLocation(685,334)" expression-java="boss.setLocation(685, 334)" enable="true"/>
-                <call expression="boss.setLocation(489,231)" expression-java="boss.setLocation(489, 231)" enable="true"/>
-                <call expression="boss.setLocation(477,303)" expression-java="boss.setLocation(477, 303)" enable="true"/>
-                <call expression="boss.setLocation(554,396)" expression-java="boss.setLocation(554, 396)" enable="true"/>
-                <call expression="boss.setLocation(485,230)" expression-java="boss.setLocation(485, 230)" enable="true"/>
-                <call expression="theMine3.setLocation(700,298)" expression-java="theMine3.setLocation(700, 298)" enable="true"/>
-                <call expression="theMine4.setLocation(852,450)" expression-java="theMine4.setLocation(852, 450)" enable="true"/>
-                <call expression="theMine3.setLocation(766,247)" expression-java="theMine3.setLocation(766, 247)" enable="true"/>
-                <call expression="theMine9.setLocation(680,336)" expression-java="theMine9.setLocation(680, 336)" enable="true"/>
-                <call expression="theMine4.setLocation(931,394)" expression-java="theMine4.setLocation(931, 394)" enable="true"/>
-                <call expression="theMine8.setLocation(222,181)" expression-java="theMine8.setLocation(222, 181)" enable="true"/>
-                <call expression="theMine2.setLocation(108,312)" expression-java="theMine2.setLocation(108, 312)" enable="true"/>
-                <call expression="boss.setLocation(557,243)" expression-java="boss.setLocation(557, 243)" enable="true"/>
-                <call expression="boss.setLocation(588,198)" expression-java="boss.setLocation(588, 198)" enable="true"/>
-                <call expression="theMine9.setLocation(329,315)" expression-java="theMine9.setLocation(329, 315)" enable="true"/>
-                <call expression="theMine3.setLocation(863,244)" expression-java="theMine3.setLocation(863, 244)" enable="true"/>
-                <call expression="theMine9.setLocation(366,380)" expression-java="theMine9.setLocation(366, 380)" enable="true"/>
-                <call expression="theMine6.setLocation(620,444)" expression-java="theMine6.setLocation(620, 444)" enable="true"/>
-                <call expression="theMine.setLocation(622,603)" expression-java="theMine.setLocation(622, 603)" enable="true"/>
+                <call expression="addObject(boss,576,238)" expression-java="addObject(boss, 576, 238)" enable="true"/>
+                <variable type="Helicopter" type-java="Helicopter" name="helicopter" value="new Helicopter()" value-java=" new Helicopter()" enable="true"/>
+                <call expression="addObject(helicopter,129,219)" expression-java="addObject(helicopter, 129, 219)" enable="true"/>
+                <variable type="Helicopter2" type-java="Helicopter2" name="helicopter2" value="new Helicopter2()" value-java=" new Helicopter2()" enable="true"/>
+                <call expression="addObject(helicopter2,952,231)" expression-java="addObject(helicopter2, 952, 231)" enable="true"/>
+                <variable type="Mine" type-java="Mine" name="mine" value="new Mine()" value-java=" new Mine()" enable="true"/>
+                <call expression="addObject(mine,936,583)" expression-java="addObject(mine, 936, 583)" enable="true"/>
+                <variable type="Mine" type-java="Mine" name="mine2" value="new Mine()" value-java=" new Mine()" enable="true"/>
+                <call expression="addObject(mine2,844,491)" expression-java="addObject(mine2, 844, 491)" enable="true"/>
+                <variable type="Mine" type-java="Mine" name="mine3" value="new Mine()" value-java=" new Mine()" enable="true"/>
+                <call expression="addObject(mine3,678,568)" expression-java="addObject(mine3, 678, 568)" enable="true"/>
+                <variable type="Mine" type-java="Mine" name="mine4" value="new Mine()" value-java=" new Mine()" enable="true"/>
+                <call expression="addObject(mine4,606,474)" expression-java="addObject(mine4, 606, 474)" enable="true"/>
+                <variable type="Mine" type-java="Mine" name="mine5" value="new Mine()" value-java=" new Mine()" enable="true"/>
+                <call expression="addObject(mine5,340,468)" expression-java="addObject(mine5, 340, 468)" enable="true"/>
+                <variable type="Mine" type-java="Mine" name="mine6" value="new Mine()" value-java=" new Mine()" enable="true"/>
+                <call expression="addObject(mine6,384,544)" expression-java="addObject(mine6, 384, 544)" enable="true"/>
+                <variable type="Mine" type-java="Mine" name="mine7" value="new Mine()" value-java=" new Mine()" enable="true"/>
+                <call expression="addObject(mine7,540,613)" expression-java="addObject(mine7, 540, 613)" enable="true"/>
+                <variable type="Mine" type-java="Mine" name="mine8" value="new Mine()" value-java=" new Mine()" enable="true"/>
+                <call expression="addObject(mine8,169,496)" expression-java="addObject(mine8, 169, 496)" enable="true"/>
+                <variable type="Mine" type-java="Mine" name="mine9" value="new Mine()" value-java=" new Mine()" enable="true"/>
+                <call expression="addObject(mine9,256,615)" expression-java="addObject(mine9, 256, 615)" enable="true"/>
+                <variable type="Mine" type-java="Mine" name="mine10" value="new Mine()" value-java=" new Mine()" enable="true"/>
+                <call expression="addObject(mine10,476,444)" expression-java="addObject(mine10, 476, 444)" enable="true"/>
                 <variable type="zombie" type-java="zombie" name="zombie" value="new zombie()" value-java=" new zombie()" enable="true"/>
-                <call expression="addObject(zombie,123,669)" expression-java="addObject(zombie, 123, 669)" enable="true"/>
-                <call expression="theMine7.setLocation(369,538)" expression-java="theMine7.setLocation(369, 538)" enable="true"/>
-                <call expression="theMine.setLocation(552,658)" expression-java="theMine.setLocation(552, 658)" enable="true"/>
-                <call expression="theMine5.setLocation(831,561)" expression-java="theMine5.setLocation(831, 561)" enable="true"/>
-                <call expression="theMine7.setLocation(309,600)" expression-java="theMine7.setLocation(309, 600)" enable="true"/>
-                <variable type="TheMine" type-java="TheMine" name="theMine10" value="new TheMine()" value-java=" new TheMine()" enable="true"/>
-                <call expression="addObject(theMine10,159,470)" expression-java="addObject(theMine10, 159, 470)" enable="true"/>
-                <variable type="TheMine" type-java="TheMine" name="theMine11" value="new TheMine()" value-java=" new TheMine()" enable="true"/>
-                <call expression="addObject(theMine11,763,693)" expression-java="addObject(theMine11, 763, 693)" enable="true"/>
-                <variable type="TheMine" type-java="TheMine" name="theMine12" value="new TheMine()" value-java=" new TheMine()" enable="true"/>
-                <call expression="addObject(theMine12,467,508)" expression-java="addObject(theMine12, 467, 508)" enable="true"/>
-                <variable type="TheMine" type-java="TheMine" name="theMine13" value="new TheMine()" value-java=" new TheMine()" enable="true"/>
-                <call expression="addObject(theMine13,66,576)" expression-java="addObject(theMine13, 66, 576)" enable="true"/>
-                <call expression="theMine10.setLocation(226,511)" expression-java="theMine10.setLocation(226, 511)" enable="true"/>
-                <call expression="theMine7.setLocation(348,628)" expression-java="theMine7.setLocation(348, 628)" enable="true"/>
+                <call expression="addObject(zombie,108,708)" expression-java="addObject(zombie, 108, 708)" enable="true"/>
+                <call expression="mine3.setLocation(687,623)" expression-java="mine3.setLocation(687, 623)" enable="true"/>
+                <call expression="mine7.setLocation(565,524)" expression-java="mine7.setLocation(565, 524)" enable="true"/>
+                <call expression="mine4.setLocation(656,447)" expression-java="mine4.setLocation(656, 447)" enable="true"/>
+                <call expression="mine7.setLocation(534,583)" expression-java="mine7.setLocation(534, 583)" enable="true"/>
+                <call expression="mine6.setLocation(391,541)" expression-java="mine6.setLocation(391, 541)" enable="true"/>
+                <call expression="mine5.setLocation(309,433)" expression-java="mine5.setLocation(309, 433)" enable="true"/>
+                <call expression="mine6.setLocation(369,529)" expression-java="mine6.setLocation(369, 529)" enable="true"/>
+                <call expression="mine7.setLocation(547,635)" expression-java="mine7.setLocation(547, 635)" enable="true"/>
+                <call expression="mine9.setLocation(267,633)" expression-java="mine9.setLocation(267, 633)" enable="true"/>
+                <call expression="mine6.setLocation(370,545)" expression-java="mine6.setLocation(370, 545)" enable="true"/>
+                <call expression="mine7.setLocation(482,644)" expression-java="mine7.setLocation(482, 644)" enable="true"/>
+                <call expression="mine9.setLocation(266,645)" expression-java="mine9.setLocation(266, 645)" enable="true"/>
+                <call expression="mine8.setLocation(148,486)" expression-java="mine8.setLocation(148, 486)" enable="true"/>
+                <call expression="mine5.setLocation(283,436)" expression-java="mine5.setLocation(283, 436)" enable="true"/>
+                <call expression="mine6.setLocation(353,542)" expression-java="mine6.setLocation(353, 542)" enable="true"/>
+                <call expression="mine9.setLocation(265,656)" expression-java="mine9.setLocation(265, 656)" enable="true"/>
+                <call expression="mine7.setLocation(499,611)" expression-java="mine7.setLocation(499, 611)" enable="true"/>
+                <call expression="mine3.setLocation(683,666)" expression-java="mine3.setLocation(683, 666)" enable="true"/>
+                <call expression="mine7.setLocation(582,590)" expression-java="mine7.setLocation(582, 590)" enable="true"/>
+                <call expression="mine6.setLocation(367,564)" expression-java="mine6.setLocation(367, 564)" enable="true"/>
+                <call expression="mine9.setLocation(261,668)" expression-java="mine9.setLocation(261, 668)" enable="true"/>
+                <call expression="mine3.setLocation(726,643)" expression-java="mine3.setLocation(726, 643)" enable="true"/>
+                <call expression="mine3.setLocation(696,689)" expression-java="mine3.setLocation(696, 689)" enable="true"/>
+                <call expression="mine3.setLocation(694,671)" expression-java="mine3.setLocation(694, 671)" enable="true"/>
+                <call expression="mine7.setLocation(598,591)" expression-java="mine7.setLocation(598, 591)" enable="true"/>
+                <call expression="mine.setLocation(909,608)" expression-java="mine.setLocation(909, 608)" enable="true"/>
+                <call expression="mine2.setLocation(841,487)" expression-java="mine2.setLocation(841, 487)" enable="true"/>
+                <call expression="mine.setLocation(885,596)" expression-java="mine.setLocation(885, 596)" enable="true"/>
+                <call expression="mine3.setLocation(725,675)" expression-java="mine3.setLocation(725, 675)" enable="true"/>
+                <call expression="mine8.setLocation(141,495)" expression-java="mine8.setLocation(141, 495)" enable="true"/>
+                <call expression="mine5.setLocation(280,424)" expression-java="mine5.setLocation(280, 424)" enable="true"/>
+                <variable type="Mine" type-java="Mine" name="mine11" value="new Mine()" value-java=" new Mine()" enable="true"/>
+                <call expression="addObject(mine11,734,556)" expression-java="addObject(mine11, 734, 556)" enable="true"/>
+                <call expression="mine7.setLocation(563,625)" expression-java="mine7.setLocation(563, 625)" enable="true"/>
+                <call expression="mine11.setLocation(672,555)" expression-java="mine11.setLocation(672, 555)" enable="true"/>
             </body>
         </method>
     </methods>

@@ -1,3 +1,4 @@
+// WARNING: This file is auto-generated and any changes to it will be overwritten
 import lang.stride.*;
 import java.util.*;
 import greenfoot.*;
@@ -11,7 +12,6 @@ public class zombie extends Actor
     private int ySpeed = 4;
     private GreenfootImage leftImage =  new  GreenfootImage("Zombie_leftImage_scaled29percent.png");
     private GreenfootImage rightImage =  new  GreenfootImage("Zombie_rightImage_scaled29percent.png");
-
 
     /**
      * Act - do whatever the zombie wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
@@ -137,6 +137,22 @@ public class zombie extends Actor
         if (popKillPowerUp == 1) {
             KillPowerUp KillPowerUp =  new  KillPowerUp();
             getWorld().addObject(KillPowerUp, x, y);
+        }
+    }
+
+    /**
+     * 
+     */
+    public void dieFromExplosion()
+    {
+        Actor mine = getOneIntersectingObject(Mine.class);
+        if (mine != null) {
+            World world = getWorld();
+            Greenfoot.playSound("EatKillPowerUp(mixed&pitched).wav");
+            world.removeObject(mine);
+            Mine Mine =  new  Mine();
+            getWorld().addObject(Mine, getX(), getY());
+            world.removeObject(this);
         }
     }
 }
