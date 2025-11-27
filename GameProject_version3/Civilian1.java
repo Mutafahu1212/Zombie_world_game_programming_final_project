@@ -10,8 +10,8 @@ public class Civilian1 extends Actor
 {
     private int action = 0;
     private int ySpeed = 0;
-    private GreenfootImage leftImage =  new  GreenfootImage("CIVILIAN_leftImage.png");
-    private GreenfootImage rightImage =  new  GreenfootImage("CIVILIAN_rightImage.png");
+    private GreenfootImage leftImage =  new GreenfootImage("CIVILIAN_leftImage.png");
+    private GreenfootImage rightImage =  new GreenfootImage("CIVILIAN_rightImage.png");
 
     /**
      * Act - do whatever the Civilian1 wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
@@ -47,7 +47,7 @@ public class Civilian1 extends Actor
         int y = Greenfoot.getRandomNumber(880);
         int popCivilian = Greenfoot.getRandomNumber(1000);
         if (popCivilian == 1) {
-            Civilian1 civilian1 =  new  Civilian1();
+            Civilian1 civilian1 =  new Civilian1();
             getWorld().addObject(civilian1, x, y);
         }
     }

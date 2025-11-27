@@ -165,23 +165,5 @@
                 </if>
             </body>
         </method>
-        <method access="public" type="void" type-java="void" name="dieFromExplosion" enable="true">
-            <javadoc xml:space="preserve"/>
-            <params/>
-            <throws/>
-            <body>
-                <variable type="Actor" type-java="Actor" name="mine" value="getOneIntersectingObject(Mine.class)" value-java="getOneIntersectingObject(Mine.class)" enable="true"/>
-                <if condition="mine!=null" condition-java="mine != null" enable="true">
-                    <ifStatements>
-                        <variable type="World" type-java="World" name="world" value="getWorld()" value-java="getWorld()" enable="true"/>
-                        <call expression="Greenfoot.playSound(&quot;EatKillPowerUp(mixed&amp;pitched).wav&quot;)" expression-java="Greenfoot.playSound(&quot;EatKillPowerUp(mixed&amp;pitched).wav&quot;)" enable="true"/>
-                        <call expression="world.removeObject(mine)" expression-java="world.removeObject(mine)" enable="true"/>
-                        <variable type="Mine" type-java="Mine" name="Mine" value="new Mine()" value-java=" new Mine()" enable="true"/>
-                        <call expression="getWorld().addObject(Mine,getX(),getY())" expression-java="getWorld().addObject(Mine, getX(), getY())" enable="true"/>
-                        <call expression="world.removeObject(this)" expression-java="world.removeObject(this)" enable="true"/>
-                    </ifStatements>
-                </if>
-            </body>
-        </method>
     </methods>
 </class>

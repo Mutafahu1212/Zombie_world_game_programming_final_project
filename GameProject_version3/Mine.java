@@ -1,4 +1,3 @@
-// WARNING: This file is auto-generated and any changes to it will be overwritten
 import lang.stride.*;
 import java.util.*;
 import greenfoot.*;
@@ -8,7 +7,7 @@ import greenfoot.*;
  */
 public class Mine extends Actor
 {
-
+    private int timer = 0;
     /**
      * Act - do whatever the Mine wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
      */
@@ -16,6 +15,7 @@ public class Mine extends Actor
     {
         killZombie();
         killZombie2();
+        
         if (isGameLost()) {
             transitionToGameOver();
         }
@@ -30,6 +30,7 @@ public class Mine extends Actor
         if (zombie != null) {
             World world = getWorld();
             world.removeObject(zombie);
+            Greenfoot.playSound("zombieExploded.wav");
         }
     }
 
@@ -42,9 +43,12 @@ public class Mine extends Actor
         if (zombie2 != null) {
             World world = getWorld();
             world.removeObject(zombie2);
+            Zombie2_dead zombie2_dead =  new  Zombie2_dead();
+            getWorld().addObject(zombie2_dead, getX(), getY());
+            Greenfoot.playSound("zombie2Exploded.wav");
         }
     }
-
+   
     /**
      * 
      */
@@ -66,5 +70,12 @@ public class Mine extends Actor
     {
         World gameLoseWorld =  new  GameLoseWorld();
         Greenfoot.setWorld(gameLoseWorld);
+    }
+
+    /**
+     * 
+     */
+    public void removeZombie2()
+    {
     }
 }

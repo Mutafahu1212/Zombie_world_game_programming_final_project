@@ -8,8 +8,8 @@ import greenfoot.*;
  */
 public class Boss extends Actor
 {
-    private GreenfootImage leftImage =  new  GreenfootImage("BOSS_leftImage.png");
-    private GreenfootImage rightImage =  new  GreenfootImage("BOSS_rightImage.png");
+    private GreenfootImage leftImage =  new GreenfootImage("BOSS_leftImage.png");
+    private GreenfootImage rightImage =  new GreenfootImage("BOSS_rightImage.png");
      int action = 0;
     private int ySpeed = 0;
 

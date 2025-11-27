@@ -87,5 +87,26 @@ public class Desert extends World
         addObject(mine11, 734, 556);
         mine7.setLocation(563, 625);
         mine11.setLocation(672, 555);
+        zombie.setLocation(99, 591);
+        mine8.setLocation(125, 429);
+        mine6.setLocation(285, 540);
+        mine5.setLocation(294, 364);
+        mine6.setLocation(291, 499);
+        mine9.setLocation(244, 668);
+        mine7.setLocation(471, 627);
+        mine7.setLocation(487, 687);
+        mine9.setLocation(235, 683);
+        mine11.setLocation(560, 552);
+        mine9.setLocation(223, 694);
+        mine7.setLocation(484, 694);
+        mine4.setLocation(714, 419);
+        mine10.setLocation(466, 410);
+        mine8.setLocation(77, 465);
+        mine3.setLocation(749, 715);
+        mine.setLocation(947, 618);
+        mine7.setLocation(465, 697);
+        mine11.setLocation(574, 550);
+        mine2.setLocation(868, 464);
+        mine4.setLocation(735, 406);
     }
 }

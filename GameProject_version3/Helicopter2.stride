@@ -16,7 +16,7 @@
             <params/>
             <throws/>
             <body>
-                <call expression="createPolice()" expression-java="createPolice()" enable="true"/>
+                <call expression="createPolice()" expression-java="createPolice()" enable="false"/>
             </body>
         </method>
         <method access="public" type="void" type-java="void" name="createPolice" enable="true">

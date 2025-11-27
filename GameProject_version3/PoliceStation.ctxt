@@ -9,4 +9,5 @@ comment2.target=void\ createPolice()
 comment2.text=\r\n\ \r\n
 comment3.params=
 comment3.target=void\ spawnKillPowerUp()
+comment3.text=\r\n\ \r\n
 numComments=4

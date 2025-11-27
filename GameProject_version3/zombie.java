@@ -139,20 +139,4 @@ public class zombie extends Actor
             getWorld().addObject(KillPowerUp, x, y);
         }
     }
-
-    /**
-     * 
-     */
-    public void dieFromExplosion()
-    {
-        Actor mine = getOneIntersectingObject(Mine.class);
-        if (mine != null) {
-            World world = getWorld();
-            Greenfoot.playSound("EatKillPowerUp(mixed&pitched).wav");
-            world.removeObject(mine);
-            Mine Mine =  new  Mine();
-            getWorld().addObject(Mine, getX(), getY());
-            world.removeObject(this);
-        }
-    }
 }

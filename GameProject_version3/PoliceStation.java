@@ -25,13 +25,13 @@ public class PoliceStation extends Actor
     public void createPolice()
     {
         if (Greenfoot.getRandomNumber(200) == 1 && countCops < 10) {
-            Cop cop1 =  new  Cop();
+            Cop cop1 =  new Cop();
             getWorld().addObject(cop1, getX(), getY());
             countCops = countCops + 1;
-            Cop cop2 =  new  Cop();
+            Cop cop2 =  new Cop();
             getWorld().addObject(cop2, getX(), getY());
             countCops = countCops + 1;
-            Cop cop3 =  new  Cop();
+            Cop cop3 =  new Cop();
             getWorld().addObject(cop3, getX(), getY());
             countCops = countCops + 1;
         }
@@ -46,7 +46,7 @@ public class PoliceStation extends Actor
         int y = Greenfoot.getRandomNumber(820);
         int popKillPowerUp = Greenfoot.getRandomNumber(300);
         if (popKillPowerUp == 1) {
-            KillPowerUp KillPowerUp =  new  KillPowerUp();
+            KillPowerUp KillPowerUp =  new KillPowerUp();
             getWorld().addObject(KillPowerUp, x, y);
         }
     }

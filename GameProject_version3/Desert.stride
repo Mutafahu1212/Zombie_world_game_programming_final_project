@@ -88,6 +88,27 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="addObject(mine11,734,556)" expression-java="addObject(mine11, 734, 556)" enable="true"/>
                 <call expression="mine7.setLocation(563,625)" expression-java="mine7.setLocation(563, 625)" enable="true"/>
                 <call expression="mine11.setLocation(672,555)" expression-java="mine11.setLocation(672, 555)" enable="true"/>
+                <call expression="zombie.setLocation(99,591)" expression-java="zombie.setLocation(99, 591)" enable="true"/>
+                <call expression="mine8.setLocation(125,429)" expression-java="mine8.setLocation(125, 429)" enable="true"/>
+                <call expression="mine6.setLocation(285,540)" expression-java="mine6.setLocation(285, 540)" enable="true"/>
+                <call expression="mine5.setLocation(294,364)" expression-java="mine5.setLocation(294, 364)" enable="true"/>
+                <call expression="mine6.setLocation(291,499)" expression-java="mine6.setLocation(291, 499)" enable="true"/>
+                <call expression="mine9.setLocation(244,668)" expression-java="mine9.setLocation(244, 668)" enable="true"/>
+                <call expression="mine7.setLocation(471,627)" expression-java="mine7.setLocation(471, 627)" enable="true"/>
+                <call expression="mine7.setLocation(487,687)" expression-java="mine7.setLocation(487, 687)" enable="true"/>
+                <call expression="mine9.setLocation(235,683)" expression-java="mine9.setLocation(235, 683)" enable="true"/>
+                <call expression="mine11.setLocation(560,552)" expression-java="mine11.setLocation(560, 552)" enable="true"/>
+                <call expression="mine9.setLocation(223,694)" expression-java="mine9.setLocation(223, 694)" enable="true"/>
+                <call expression="mine7.setLocation(484,694)" expression-java="mine7.setLocation(484, 694)" enable="true"/>
+                <call expression="mine4.setLocation(714,419)" expression-java="mine4.setLocation(714, 419)" enable="true"/>
+                <call expression="mine10.setLocation(466,410)" expression-java="mine10.setLocation(466, 410)" enable="true"/>
+                <call expression="mine8.setLocation(77,465)" expression-java="mine8.setLocation(77, 465)" enable="true"/>
+                <call expression="mine3.setLocation(749,715)" expression-java="mine3.setLocation(749, 715)" enable="true"/>
+                <call expression="mine.setLocation(947,618)" expression-java="mine.setLocation(947, 618)" enable="true"/>
+                <call expression="mine7.setLocation(465,697)" expression-java="mine7.setLocation(465, 697)" enable="true"/>
+                <call expression="mine11.setLocation(574,550)" expression-java="mine11.setLocation(574, 550)" enable="true"/>
+                <call expression="mine2.setLocation(868,464)" expression-java="mine2.setLocation(868, 464)" enable="true"/>
+                <call expression="mine4.setLocation(735,406)" expression-java="mine4.setLocation(735, 406)" enable="true"/>
             </body>
         </method>
     </methods>
