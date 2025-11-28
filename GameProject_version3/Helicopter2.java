@@ -23,13 +23,13 @@ public class Helicopter2 extends Actor
     public void createPolice()
     {
         if (Greenfoot.getRandomNumber(300) == 1 && countCops < 5) {
-            Cop cop1 =  new  Cop();
+            Cop cop1 =  new Cop();
             getWorld().addObject(cop1, getX(), getY());
             countCops = countCops + 1;
-            Cop cop2 =  new  Cop();
+            Cop cop2 =  new Cop();
             getWorld().addObject(cop2, getX(), getY());
             countCops = countCops + 1;
-            Cop cop3 =  new  Cop();
+            Cop cop3 =  new Cop();
             getWorld().addObject(cop3, getX(), getY());
             countCops = countCops + 1;
         }
