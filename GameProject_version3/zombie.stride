@@ -40,7 +40,6 @@
                 <call expression="getWorld().showText(&quot; &quot;+Counter.killcount+&quot;/10&quot;,500,860)" expression-java="getWorld().showText(&quot; &quot; + Counter.killcount + &quot;/10&quot;, 500, 860)" enable="true"/>
                 <call expression="addCiviliansInRandomSpots()" expression-java="addCiviliansInRandomSpots()" enable="true"/>
                 <call expression="eatKillPowerUp()" expression-java="eatKillPowerUp()" enable="true"/>
-                <call expression="spawnKillPowerUp()" expression-java="spawnKillPowerUp()" enable="true"/>
             </body>
         </method>
         <method access="public" type="void" type-java="void" name="move" enable="true">
@@ -145,22 +144,6 @@
                     <ifStatements>
                         <variable type="Civilian1" type-java="Civilian1" name="civilian1" value="new Civilian1()" value-java=" new Civilian1()" enable="true"/>
                         <call expression="getWorld().addObject(civilian1,x,y)" expression-java="getWorld().addObject(civilian1, x, y)" enable="true"/>
-                    </ifStatements>
-                </if>
-            </body>
-        </method>
-        <method access="public" type="void" type-java="void" name="spawnKillPowerUp" enable="true">
-            <javadoc xml:space="preserve"/>
-            <params/>
-            <throws/>
-            <body>
-                <variable type="int" type-java="int" name="x" value="Greenfoot.getRandomNumber(1450)" value-java="Greenfoot.getRandomNumber(1450)" enable="true"/>
-                <variable type="int" type-java="int" name="y" value="Greenfoot.getRandomNumber(820)" value-java="Greenfoot.getRandomNumber(820)" enable="true"/>
-                <variable type="int" type-java="int" name="popKillPowerUp" value="Greenfoot.getRandomNumber(300)" value-java="Greenfoot.getRandomNumber(300)" enable="true"/>
-                <if condition="popKillPowerUp==1" condition-java="popKillPowerUp == 1" enable="true">
-                    <ifStatements>
-                        <variable type="KillPowerUp" type-java="KillPowerUp" name="KillPowerUp" value="new KillPowerUp()" value-java=" new KillPowerUp()" enable="true"/>
-                        <call expression="getWorld().addObject(KillPowerUp,x,y)" expression-java="getWorld().addObject(KillPowerUp, x, y)" enable="true"/>
                     </ifStatements>
                 </if>
             </body>

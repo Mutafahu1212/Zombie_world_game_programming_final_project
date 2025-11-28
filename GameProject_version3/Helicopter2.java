@@ -15,6 +15,7 @@ public class Helicopter2 extends Actor
      */
     public void act()
     {
+        createPolice();
     }
 
     /**

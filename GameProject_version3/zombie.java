@@ -33,7 +33,6 @@ public class zombie extends Actor
         getWorld().showText(" " + Counter.killcount + "/10", 500, 860);
         addCiviliansInRandomSpots();
         eatKillPowerUp();
-        spawnKillPowerUp();
     }
 
     /**
@@ -123,20 +122,6 @@ public class zombie extends Actor
         if (popCivilian == 1) {
             Civilian1 civilian1 =  new Civilian1();
             getWorld().addObject(civilian1, x, y);
-        }
-    }
-
-    /**
-     * 
-     */
-    public void spawnKillPowerUp()
-    {
-        int x = Greenfoot.getRandomNumber(1450);
-        int y = Greenfoot.getRandomNumber(820);
-        int popKillPowerUp = Greenfoot.getRandomNumber(300);
-        if (popKillPowerUp == 1) {
-            KillPowerUp KillPowerUp =  new KillPowerUp();
-            getWorld().addObject(KillPowerUp, x, y);
         }
     }
 }

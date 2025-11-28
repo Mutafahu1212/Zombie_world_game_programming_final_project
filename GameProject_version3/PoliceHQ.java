@@ -6,12 +6,12 @@ import greenfoot.*;
 /**
  * 
  */
-public class Helicopter extends Actor
+public class PoliceHQ extends Actor
 {
     protected int countCops = 0;
 
     /**
-     * Act - do whatever the Helicopter wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
+     * Act - do whatever the PoliceHQ wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
@@ -23,7 +23,7 @@ public class Helicopter extends Actor
      */
     public void createPolice()
     {
-        if (Greenfoot.getRandomNumber(300) == 1 && countCops < 5) {
+        if (Greenfoot.getRandomNumber(200) == 1 && countCops < 3) {
             Cop cop1 =  new Cop();
             getWorld().addObject(cop1, getX(), getY());
             countCops = countCops + 1;
