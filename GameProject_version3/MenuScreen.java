@@ -14,6 +14,8 @@ public class MenuScreen extends World
     public MenuScreen()
     {
         super(650, 650, 1);
+         getBackground().setColor(Color.RED);
+        showText("Controls", 150, 600);
         prepare();
     }
 

@@ -14,6 +14,6 @@ public class GameWinWorld extends World
      */
     public GameWinWorld()
     {
-        super(624, 624, 1);
+        super(624, 520, 1);
     }
 }

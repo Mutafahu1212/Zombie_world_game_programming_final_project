@@ -1,4 +1,3 @@
-// WARNING: This file is auto-generated and any changes to it will be overwritten
 import lang.stride.*;
 import java.util.*;
 import greenfoot.*;
@@ -16,6 +15,7 @@ public class Helicopter extends Actor
     public void act()
     {
         createPolice();
+        getWorld().showText(" "+Counter.killcount+"/10",500,800);
     }
 
     /**
@@ -23,14 +23,14 @@ public class Helicopter extends Actor
      */
     public void createPolice()
     {
-        if (Greenfoot.getRandomNumber(300) == 1 && countCops < 5) {
-            Cop cop1 =  new Cop();
+        if (Greenfoot.getRandomNumber(300) == 1 && countCops < 2) {
+            Cop cop1 =  new  Cop();
             getWorld().addObject(cop1, getX(), getY());
             countCops = countCops + 1;
-            Cop cop2 =  new Cop();
+            Cop cop2 =  new  Cop();
             getWorld().addObject(cop2, getX(), getY());
             countCops = countCops + 1;
-            Cop cop3 =  new Cop();
+            Cop cop3 =  new  Cop();
             getWorld().addObject(cop3, getX(), getY());
             countCops = countCops + 1;
         }

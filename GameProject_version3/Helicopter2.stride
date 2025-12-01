@@ -24,7 +24,7 @@
             <params/>
             <throws/>
             <body>
-                <if condition="Greenfoot.getRandomNumber(300)==1&amp;&amp;countCops&lt;5" condition-java="Greenfoot.getRandomNumber(300) == 1 &amp;&amp; countCops &lt; 5" enable="true">
+                <if condition="Greenfoot.getRandomNumber(300)==1&amp;&amp;countCops&lt;3" condition-java="Greenfoot.getRandomNumber(300) == 1 &amp;&amp; countCops &lt; 3" enable="true">
                     <ifStatements>
                         <variable type="Cop" type-java="Cop" name="cop1" value="new Cop()" value-java=" new Cop()" enable="true"/>
                         <call expression="getWorld().addObject(cop1,getX(),getY())" expression-java="getWorld().addObject(cop1, getX(), getY())" enable="true"/>

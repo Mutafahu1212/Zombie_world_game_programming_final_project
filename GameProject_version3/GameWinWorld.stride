@@ -12,7 +12,7 @@
             <javadoc xml:space="preserve">Constructor for objects of class GameWinWorld.</javadoc>
             <params/>
             <throws/>
-            <delegate target="super" params="624,624,1" params-java="624, 624, 1"/>
+            <delegate target="super" params="624,520,1" params-java="624, 520, 1"/>
             <body/>
         </constructor>
     </constructors>

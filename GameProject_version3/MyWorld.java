@@ -24,6 +24,7 @@ public class MyWorld extends World
         showText("Civilians Eaten: ", 400, 860);
         prepare();
         Counter.killcount = 0;
+        Counter.target = 20;
     }
 
     /**

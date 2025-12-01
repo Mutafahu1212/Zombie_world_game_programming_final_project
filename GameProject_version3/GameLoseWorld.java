@@ -14,7 +14,7 @@ public class GameLoseWorld extends World
      */
     public GameLoseWorld()
     {
-        super(624, 624, 1);
+        super(624, 520, 1);
     }
 
     /**

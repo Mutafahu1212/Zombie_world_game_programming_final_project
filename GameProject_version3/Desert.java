@@ -13,7 +13,7 @@ public class Desert extends World
      */
     public Desert()
     {
-        super(1090, 820, 1);
+        super(1090, 850, 1);
         prepare();
         Counter.killcount = 0;
     }
@@ -108,5 +108,40 @@ public class Desert extends World
         mine11.setLocation(574, 550);
         mine2.setLocation(868, 464);
         mine4.setLocation(735, 406);
+        mine11.setLocation(617,511);
+        removeObject(mine10);
+        mine9.setLocation(149,730);
+        mine6.setLocation(324,519);
+        removeObject(mine6);
+        zombie.setLocation(279,541);
+        mine7.setLocation(494,770);
+        helicopter.setLocation(111,129);
+        helicopter2.setLocation(911,102);
+        boss.setLocation(509,122);
+        mine5.setLocation(278,256);
+        mine8.setLocation(47,404);
+        mine9.setLocation(120,776);
+        mine3.setLocation(870,777);
+        mine11.setLocation(667,665);
+        mine.setLocation(957,658);
+        mine4.setLocation(560,441);
+        mine2.setLocation(792,239);
+        mine4.setLocation(554,426);
+        mine11.setLocation(782,534);
+        mine3.setLocation(721,804);
+        mine11.setLocation(909,397);
+        mine11.setLocation(768,480);
+        mine4.setLocation(466,541);
+        mine11.setLocation(793,424);
+        mine7.setLocation(391,782);
+        mine4.setLocation(426,466);
+        mine3.setLocation(691,766);
+        mine.setLocation(961,633);
+        mine11.setLocation(869,424);
+        mine4.setLocation(531,478);
+        mine11.setLocation(805,440);
+        helicopter.setLocation(181,135);
+        helicopter.setLocation(135,112);
+        helicopter2.setLocation(980,106);
     }
 }

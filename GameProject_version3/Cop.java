@@ -10,8 +10,8 @@ public class Cop extends Actor
 {
      int action = 0;
     private int ySpeed = 0;
-    private GreenfootImage leftImage =  new GreenfootImage("COP_leftImage.png");
-    private GreenfootImage rightImage =  new GreenfootImage("COP_rightImage.png");
+    private GreenfootImage leftImage =  new  GreenfootImage("COP_leftImage.png");
+    private GreenfootImage rightImage =  new  GreenfootImage("COP_rightImage.png");
 
     /**
      * Act - do whatever the Cop wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
@@ -134,7 +134,7 @@ public class Cop extends Actor
      */
     public void transitionToGameOver()
     {
-        World gameLoseWorld =  new GameLoseWorld();
+        World gameLoseWorld =  new  GameLoseWorld();
         Greenfoot.setWorld(gameLoseWorld);
     }
 

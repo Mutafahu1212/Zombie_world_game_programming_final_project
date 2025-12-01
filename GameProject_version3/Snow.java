@@ -16,6 +16,9 @@ public class Snow extends World
         super(1250, 820, 1);
         prepare();
         Counter.killcount = 0;
+        showText("Civilians Eaten: ", 400, 860);
+
+        
     }
 
     /**

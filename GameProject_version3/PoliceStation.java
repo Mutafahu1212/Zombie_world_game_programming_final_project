@@ -1,4 +1,3 @@
-// WARNING: This file is auto-generated and any changes to it will be overwritten
 import lang.stride.*;
 import java.util.*;
 import greenfoot.*;
@@ -9,6 +8,7 @@ import greenfoot.*;
 public class PoliceStation extends Actor
 {
     protected int countCops = 0;
+    
 
     /**
      * Act - do whatever the PoliceStation wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
@@ -17,6 +17,7 @@ public class PoliceStation extends Actor
     {
         createPolice();
         spawnKillPowerUp();
+        getWorld().showText(" " + Counter.killcount + "/10", 500, 860);
     }
 
     /**
@@ -24,7 +25,7 @@ public class PoliceStation extends Actor
      */
     public void createPolice()
     {
-        if (Greenfoot.getRandomNumber(200) == 1 && countCops < 10) {
+        if (Greenfoot.getRandomNumber(300) == 1 && countCops < 5) {
             Cop cop1 =  new Cop();
             getWorld().addObject(cop1, getX(), getY());
             countCops = countCops + 1;
@@ -44,8 +45,8 @@ public class PoliceStation extends Actor
     {
         int x = Greenfoot.getRandomNumber(1450);
         int y = Greenfoot.getRandomNumber(820);
-        int popKillPowerUp = Greenfoot.getRandomNumber(300);
-        if (popKillPowerUp == 1) {
+        int popKillPowerUp = Greenfoot.getRandomNumber(200);
+        if (popKillPowerUp == 1 && getWorld().getObjects(KillPowerUp.class).isEmpty()) {
             KillPowerUp KillPowerUp =  new KillPowerUp();
             getWorld().addObject(KillPowerUp, x, y);
         }
