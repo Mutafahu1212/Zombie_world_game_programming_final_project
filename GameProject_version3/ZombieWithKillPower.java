@@ -157,7 +157,7 @@ public class ZombieWithKillPower extends Actor
      */
     public void endKillPower()
     {
-        if (timer > 600) {
+        if (timer > 300) {
             timer = 0;
             World world = getWorld();
             zombie z =  new  zombie();

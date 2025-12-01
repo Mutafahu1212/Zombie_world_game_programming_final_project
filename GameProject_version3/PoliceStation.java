@@ -25,7 +25,7 @@ public class PoliceStation extends Actor
      */
     public void createPolice()
     {
-        if (Greenfoot.getRandomNumber(300) == 1 && countCops < 5) {
+        if (Greenfoot.getRandomNumber(250) == 1 && countCops < 5) {
             Cop cop1 =  new Cop();
             getWorld().addObject(cop1, getX(), getY());
             countCops = countCops + 1;
