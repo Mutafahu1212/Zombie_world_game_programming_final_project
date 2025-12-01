@@ -45,8 +45,8 @@ public class PoliceStation extends Actor
     {
         int x = Greenfoot.getRandomNumber(1450);
         int y = Greenfoot.getRandomNumber(820);
-        int popKillPowerUp = Greenfoot.getRandomNumber(200);
-        if (popKillPowerUp == 1 && getWorld().getObjects(KillPowerUp.class).isEmpty()) {
+        int popKillPowerUp = Greenfoot.getRandomNumber(500);
+        if (popKillPowerUp == 1 & getWorld().getObjects(KillPowerUp.class).isEmpty()) {
             KillPowerUp KillPowerUp =  new KillPowerUp();
             getWorld().addObject(KillPowerUp, x, y);
         }

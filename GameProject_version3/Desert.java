@@ -13,7 +13,7 @@ public class Desert extends World
      */
     public Desert()
     {
-        super(1090, 850, 1);
+        super(1200, 850, 1);
         prepare();
         Counter.killcount = 0;
     }
@@ -143,5 +143,62 @@ public class Desert extends World
         helicopter.setLocation(181,135);
         helicopter.setLocation(135,112);
         helicopter2.setLocation(980,106);
+        boss.setLocation(513,126);
+        removeObject(boss);
+        Mine mine12 = new Mine();
+        addObject(mine12,487,185);
+        Mine mine13 = new Mine();
+        addObject(mine13,631,89);
+        mine4.setLocation(478,521);
+        mine12.setLocation(554,299);
+        mine11.setLocation(778,487);
+        mine12.setLocation(532,272);
+        mine4.setLocation(504,541);
+        mine2.setLocation(905,305);
+        mine11.setLocation(709,446);
+        mine4.setLocation(539,631);
+        mine13.setLocation(482,113);
+        mine12.setLocation(586,235);
+        mine13.setLocation(477,131);
+        mine12.setLocation(524,295);
+        mine13.setLocation(653,83);
+        mine12.setLocation(545,318);
+        mine3.setLocation(704,797);
+        mine7.setLocation(346,792);
+        mine4.setLocation(530,644);
+        mine4.setLocation(481,606);
+        zombie.setLocation(76,680);
+        mine9.setLocation(257,500);
+        mine9.setLocation(746,668);
+        removeObject(mine9);
+        mine4.setLocation(356,501);
+        mine12.setLocation(574,299);
+        mine11.setLocation(681,572);
+        mine3.setLocation(703,820);
+
+        addObject(mine9,996,811);
+        mine11.setLocation(686,461);
+        Mine mine14 = new Mine();
+        addObject(mine14,400,92);
+        mine4.setLocation(358,547);
+        mine7.setLocation(394,776);
+        mine4.setLocation(332,533);
+        mine11.setLocation(675,533);
+        mine7.setLocation(399,804);
+        mine12.setLocation(563,301);
+        mine.setLocation(1043,545);
+        mine3.setLocation(665,817);
+        mine12.setLocation(550,324);
+        mine2.setLocation(865,317);
+        mine5.setLocation(275,285);
+        mine11.setLocation(734,555);
+        mine4.setLocation(348,556);
+        mine3.setLocation(682,799);
+        mine13.setLocation(654,96);
+        mine13.setLocation(652,121);
+        helicopter2.setLocation(1132,125);
+        helicopter2.setLocation(1092,75);
+        helicopter.setLocation(173,75);
+        helicopter.setLocation(108,76);
     }
 }

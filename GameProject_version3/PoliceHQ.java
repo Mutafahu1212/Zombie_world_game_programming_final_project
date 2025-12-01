@@ -28,13 +28,13 @@ public class PoliceHQ extends Actor
      */
     public void createPolice()
     {
-        if (Greenfoot.getRandomNumber(200) == 1 && countCops < 3) {
+        if (Greenfoot.getRandomNumber(250) == 1 && countCops < 2) {
             Cop cop1 =  new  Cop();
             getWorld().addObject(cop1, getX(), getY());
-            countCops = countCops + 1;
+            
             Cop cop2 =  new  Cop();
             getWorld().addObject(cop2, getX(), getY());
-            countCops = countCops + 1;
+            
             Cop cop3 =  new  Cop();
             getWorld().addObject(cop3, getX(), getY());
             countCops = countCops + 1;

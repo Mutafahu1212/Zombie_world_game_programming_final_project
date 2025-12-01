@@ -46,8 +46,11 @@ public class Mine extends Actor
             Zombie2_dead zombie2_dead =  new  Zombie2_dead();
             getWorld().addObject(zombie2_dead, getX(), getY());
             Greenfoot.playSound("zombie2Exploded.wav");
+            
+    
         }
     }
+  
    
     /**
      * 

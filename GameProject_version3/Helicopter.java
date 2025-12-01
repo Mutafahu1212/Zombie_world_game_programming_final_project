@@ -23,7 +23,7 @@ public class Helicopter extends Actor
      */
     public void createPolice()
     {
-        if (Greenfoot.getRandomNumber(300) == 1 && countCops < 2) {
+        if (Greenfoot.getRandomNumber(375) == 1 && countCops < 2) {
             Cop cop1 =  new  Cop();
             getWorld().addObject(cop1, getX(), getY());
             countCops = countCops + 1;
